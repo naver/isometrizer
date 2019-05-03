@@ -1,0 +1,39 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rulesDirectory": [
+    "tslint-consistent-codestyle",
+    "tslint-eslint-rules"
+  ],
+  "rules": {
+    "curly": false,
+    "arrow-parens": false,
+    "no-bitwise": false,
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "variable-name": false,
+    "indent": [true, "spaces", 4],
+    "whitespace": [
+      true,
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-branch",
+      "check-type-operator",
+      "check-type",
+      "check-typecast",
+      "check-preblock"
+    ],
+    "interface-name": [true, "never-prefix"]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*"
+    ]
+  }
+}

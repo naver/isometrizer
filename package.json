@@ -1,0 +1,36 @@
+{
+  "name": "isometrizer",
+  "version": "0.0.1",
+  "description": "Isometrizer turns your DOM elements into isometric projection",
+  "main": "dist/isometrizer.js",
+  "module": "dist/isometrizer.esm.js",
+  "types": "dist/declaration/index.d.ts",
+  "scripts": {
+    "build": "npm run lint && rm -rf ./dist && rollup -c && npm run declaration",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "declaration": "rm -rf declaration && tsc -p tsconfig.declaration.json",
+    "demo:build": "npm run build && cpx 'dist/**/*' demo/dist --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naver/isometrizer"
+  },
+  "author": {
+    "name": "NAVER Corp."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-prototype-minify": "^1.0.5",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.2",
+    "tslint": "^5.16.0",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {}
+}
