@@ -1,8 +1,9 @@
 {
   "name": "isometrizer",
-  "version": "0.0.2-snapshot",
+  "version": "0.0.3",
   "description": "Isometrizer turns your DOM elements into isometric projection",
   "main": "dist/isometrizer.js",
+  "es2015": "dist/isometrizer.js",
   "module": "dist/isometrizer.esm.js",
   "types": "dist/declaration/index.d.ts",
   "scripts": {
@@ -30,7 +31,7 @@
     "tslint": "^5.16.0",
     "tslint-consistent-codestyle": "^1.15.1",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.4.5"
+    "typescript": "^2.8.4"
   },
   "dependencies": {}
 }
