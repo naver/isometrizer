@@ -1,6 +1,6 @@
 {
   "name": "isometrizer",
-  "version": "0.0.3",
+  "version": "0.0.3-snapshot",
   "description": "Isometrizer turns your DOM elements into isometric projection",
   "main": "dist/isometrizer.js",
   "es2015": "dist/isometrizer.js",
