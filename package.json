@@ -10,7 +10,8 @@
     "build": "npm run lint && rm -rf ./dist && rollup -c && npm run declaration",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "declaration": "rm -rf declaration && tsc -p tsconfig.declaration.json",
-    "demo:build": "npm run build && cpx 'dist/**/*' demo/dist --clean"
+    "demo:build": "npm run build && cpx 'dist/**/*' demo/dist --clean",
+    "demo:deploy": "npm run demo:build && gh-pages -d demo/"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "cpx": "^1.5.0",
+    "gh-pages": "^2.0.1",
     "rollup": "^1.10.1",
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-prototype-minify": "^1.0.5",

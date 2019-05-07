@@ -228,9 +228,9 @@ const timeline = new mojs.Timeline({
 .append(controls.float)
 
 const imageWrapper = document.getElementById("movie-images");
-const _movieImages = imageWrapper.getElementsByTagName("img");
+const posters = imageWrapper.querySelectorAll(".poster");
 const movieImages = []
-for (const img of _movieImages) {
+for (const img of posters) {
 	movieImages.push(img);
 }
 
@@ -240,7 +240,8 @@ for (const [index, img] of movieImages.entries()) {
 	img.onclick = () => {
 		img.selected = true;
 		movieToPlay = movies[index];
-		img.classList.toggle("selected");
+        img.classList.toggle("selected");
+        img.classList.toggle("selectable");
 		for (const otherImage of movieImages) {
 			otherImage.onclick = undefined;
 			if (otherImage.selected) continue;

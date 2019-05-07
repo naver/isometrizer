@@ -8,12 +8,28 @@ html, body {
 	background: #222B31;
 }
 
-img {
+.poster {
 	position: absolute;
 	display: inline-block;
 	width: 240px;
 	height: 370px;
-	cursor: pointer;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 370px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.selectable:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+.poster-number {
+    vertical-align: middle;
 }
 
 .iso-wrapper {
@@ -112,7 +128,9 @@ img {
 		left: 40px;
 		top: 40px;
 		width: 720px;
-		height: 720px;
+        height: 720px;
+        line-height: 720px;
+        font-size: 60px;
     }
 }
 
